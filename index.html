@@ -36,7 +36,13 @@
         width: 2500px;
         height: 210px;
         float: static;
-        padding-top: 60px;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+      }
+      
+      #nav {
+        flex: 1; 
       }
       
       #nav ul {
@@ -75,6 +81,17 @@
         text-decoration: none;
       }
       
+      .logo {
+        width: 90px;
+        height: 90px; 
+        margin: 0 auto; 
+        flex: none; 
+      }
+      
+      .contacts {
+        color: white;
+        flex: 1; 
+      }
     </style>
   </head>
 
@@ -87,6 +104,10 @@
             <li class="medium"><a href="/3">CONTACT</a></li>
           </ul>
     </div>
+      <img src="MichaelGvozdek - SilhouetteLogo.png" alt="Michaels Personal Logo" class="logo">
+      <div class="contacts">
+          
+      </div>
       </div>
      <img src="Header Background.jpg" alt="Geometric Stripes">
 
