@@ -36,22 +36,58 @@
         width: 2500px;
         height: 210px;
         float: static;
-        font-size: 33.33px;
-        color: white;
         padding-top: 60px;
-        padding-left: 125px;
       }
       
+      #nav ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 5px 0px 10px 20px;
+        overflow: hidden;
+      }
+      
+      #nav li {
+        float: left;
+        padding: 25px 25px 10px 100px;
+      }
+      
+      #nav a:link {
+        color: #a9a9a9;
+        text-decoration: none;
+        font-size: 30px;
+      }
+
+      /* visited link */
+      #nav a:visited {
+        color: purple;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      #nav a:hover {
+        color: #e8ebe7;
+        text-decoration: none;
+      }
+
+      /* selected link */
+      #nav a:active {
+        color: #e8ebe7;
+        text-decoration: none;
+      }
       
     </style>
   </head>
 
   <body>
     <div class="header">
-            <p class="bold">
-          HOME&emsp; &emsp; ABOUT ME&emsp; &emsp; CONTACT
-      </p>
+    <div id="nav">
+            <ul>
+            <li class="medium"><a href="/1">HOME</a></li>
+            <li class="medium"><a href="/2">ABOUT ME</a></li>
+            <li class="medium"><a href="/3">CONTACT</a></li>
+          </ul>
     </div>
+      </div>
      <img src="Header Background.jpg" alt="Geometric Stripes">
 
   </body>
