@@ -6,6 +6,10 @@
     <!--Created by <Michael Gvozdek> on <2024/11/04> -->
     <link rel="stylesheet" href="https://use.typekit.net/ltl0scj.css">
     <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
       .regular {
         font-family: "azo-sans-web", sans-serif;
         font-weight: 400;
@@ -33,12 +37,14 @@
       .header {
         box-sizing: border-box;
         background-color: 283121;
-        width: 100%px;
         height: 150px;
         float: static;
         display: flex;
         align-items: center; 
         justify-content: space-between;
+        width: 100vw;
+        position: fixed;
+
       }
       
       #nav {
@@ -94,7 +100,7 @@
         gap: 15px; 
         align-items: center;
         justify-content: flex-end;
-        margin-right: 50px;
+        margin-right: 75px;
 
       }
       
@@ -104,7 +110,10 @@
       
       .back {
         background-color: #1e1f1e;
+        height: 7500px;
       }
+      
+      
     </style>
   </head>
 
