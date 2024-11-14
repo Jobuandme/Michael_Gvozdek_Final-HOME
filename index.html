@@ -34,7 +34,7 @@
         box-sizing: border-box;
         background-color: 283121;
         width: 100%px;
-        height: 210px;
+        height: 150px;
         float: static;
         display: flex;
         align-items: center; 
@@ -47,14 +47,13 @@
       
       #nav ul {
         list-style-type: none;
-        margin: 0px;
-        padding: 5px 0px 10px 20px;
+        padding: 5px 0px 10px 10px;
         overflow: hidden;
       }
       
       #nav li {
         float: left;
-        padding: 25px 25px 10px 70px;
+        padding: 25px 25px 10px 50px;
       }
       
       #nav a:link {
@@ -91,15 +90,25 @@
       .contacts {
         color: white;
         flex: 1; 
+        display: flex;
+        gap: 15px; 
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 50px;
+
       }
       
       .background {
-        width: 100%
+        width: 100%;
+      }
+      
+      .back {
+        background-color: #1e1f1e;
       }
     </style>
   </head>
 
-  <body>
+  <body class="back">
     <div class="header">
     <div id="nav">
             <ul>
@@ -110,7 +119,12 @@
     </div>
       <img src="MichaelGvozdek - SilhouetteLogo.png" alt="Michaels Personal Logo" class="logo">
       <div class="contacts">
-          
+        
+        <img src="linkedin.png" alt="description of image" 
+             style="width: 40px; height: 35px;">
+          <img src="Email icon.png" alt="description of image" 
+               style="width: 35px; height: 30px;">
+        
       </div>
       </div>
      <img src="Header Background.jpg" alt="Geometric Stripes" class="background">
