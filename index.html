@@ -6,10 +6,20 @@
     <!--Created by <Michael Gvozdek> on <2024/11/04> -->
     <link rel="stylesheet" href="https://use.typekit.net/ltl0scj.css">
     <style>
-      html, body {
+      html {
         margin: 0;
         padding: 0;
       }
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 7500px;
+        justify-content: center;
+        /* Center horizontally */
+
+      }
+
       .regular {
         font-family: "azo-sans-web", sans-serif;
         font-weight: 400;
@@ -33,35 +43,34 @@
         font-weight: 900;
         font-style: normal;
       }
-      
+
       .header {
         box-sizing: border-box;
         background-color: 283121;
-        height: 150px;
+        height: 100px;
         float: static;
         display: flex;
-        align-items: center; 
+        align-items: center;
         justify-content: space-between;
         width: 100vw;
         position: fixed;
+      }
 
-      }
-      
       #nav {
-        flex: 1; 
+        flex: 1;
       }
-      
+
       #nav ul {
         list-style-type: none;
         padding: 5px 0px 10px 10px;
         overflow: hidden;
       }
-      
+
       #nav li {
         float: left;
         padding: 25px 25px 10px 50px;
       }
-      
+
       #nav a:link {
         color: #a9a9a9;
         text-decoration: none;
@@ -85,58 +94,103 @@
         color: #e8ebe7;
         text-decoration: none;
       }
-      
+
       .logo {
-        width: 90px;
-        height: 90px; 
-        margin: 0 auto; 
-        flex: none; 
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+        flex: none;
       }
-      
+
       .contacts {
         color: white;
-        flex: 1; 
+        flex: 1;
         display: flex;
-        gap: 15px; 
+        gap: 15px;
         align-items: center;
         justify-content: flex-end;
         margin-right: 75px;
 
       }
-      
+
       .background {
         width: 100%;
       }
-      
+
       .back {
         background-color: #1e1f1e;
-        height: 7500px;
       }
-      
-      
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 500px;
+        justify-content: flex-start;
+        height: 100%;
+      }
+
+      .displayedWork {
+        width: 1133px;
+        height: 933px;
+        /*733px + height of titlebox 200px */
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .titleBox {
+        height: 200px;
+        background-color: lightblue;
+        width: 100%;
+        margin-top: 733px;
+      }
+
+      .title {
+        height: 200px;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
 
   <body class="back">
     <div class="header">
-    <div id="nav">
-            <ul>
-            <li class="medium"><a href="/1">HOME</a></li>
-            <li class="medium"><a href="/2">ABOUT ME</a></li>
-            <li class="medium"><a href="/3">CONTACT</a></li>
-          </ul>
-    </div>
+      <div id="nav">
+        <ul>
+          <li class="medium"><a href="/1">HOME</a></li>
+          <li class="medium"><a href="/2">ABOUT ME</a></li>
+          <li class="medium"><a href="/3">CONTACT</a></li>
+        </ul>
+      </div>
       <img src="MichaelGvozdek - SilhouetteLogo.png" alt="Michaels Personal Logo" class="logo">
       <div class="contacts">
-        
-        <img src="linkedin.png" alt="description of image" 
-             style="width: 40px; height: 35px;">
-          <img src="Email icon.png" alt="description of image" 
-               style="width: 35px; height: 30px;">
-        
+
+        <img src="linkedin.png" alt="description of image" style="widh: 40px; height: 35px;">
+        <img src="Email icon.png" alt="description of image" style="width: 35px; height: 30px;">
       </div>
+    </div>
+    <img src="Header Background.jpg" alt="Geometric Stripes" class="background">
+
+    <div class="content">
+      <div class="displayedWork">
+        <div class="titleBox"></div>
       </div>
-     <img src="Header Background.jpg" alt="Geometric Stripes" class="background">
+      <div class="displayedWork">
+        <div class="titleBox"></div>
+      </div>
+       <div class="displayedWork">
+        <div class="titleBox"></div>
+      </div>     
+      
+      
+    </div>
+
+
 
   </body>
 
