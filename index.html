@@ -172,16 +172,16 @@
         font-weight: 400;
         font-style: normal;
       }
+      
       .overlay-text {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-100%, -50%);
         color: white;
         font-size: 20px;
         font-weight: bold;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.5); /* Optional for better readability */
+        text-align: left;
         padding: 10px;
       }
       
@@ -189,6 +189,21 @@
         position: relative;
         display: inline-block;
         width: fit-content;
+      }
+      
+      .name-Main {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 3em;
+      }
+      
+      .name-Sub {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #516543;
+        transform: translate(0%, -125%)
       }
       
     </style>
@@ -213,7 +228,15 @@
         </a>
       </div>
     </div>
-    <img src="Header Background.jpg" alt="Geometric Stripes" class="background">
+    <div class="image-container">
+        <img src="Header Background.jpg" alt="Geometric Stripes" class="background">
+      <div class="overlay-text">
+        <h1 class="name-Main">MICHAEL GVOZDEK</h1>
+      <h2 class="name-Sub">
+        Graphic Design - Digital Media
+        </h2></div>
+    </div>
+
 
     <div class="content">
       <div class="displayedWork">
